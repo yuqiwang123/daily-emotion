@@ -6,7 +6,8 @@ function footer() {
     return (
         <>
             
-            <h5 className="text-center copyright"> © Daily Emotion--2022 AthenaHack</h5>
+            <h5 className="text-center copyright"> © Copyrights reserved by DailyEmotion(2022 AthenaHack)</h5>
+            <h5 className="text-center copyright"> Yu Qi Wang, Lei Cao, Yu Hsuan Lu </h5>
         </>
     )
 }

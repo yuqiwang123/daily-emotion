@@ -5,7 +5,7 @@ import img1 from '../../assets/asset-1.png'
 import ShowUser from '../Users/ShowUsers/ShowUser'
 import Spinner from '../../Containers/Spinner/Spinner'
 import HeatMap from '@uiw/react-heat-map';
-import song from './joy.mp3'
+import song from './SinglePost/songs/joy.mp3'
 
 
 export class App extends Component {
@@ -86,14 +86,14 @@ export class App extends Component {
         };
 
         let value = [
-            { date: '2016/01/11', count: 2 },
-            { date: '2016/01/12', count: 20 },
-            { date: '2016/01/13', count: 10 },
+            { date: '2022/01/11', count: 30 },
+            { date: '2022/01/12', count: 20 },
+            { date: '2022/01/13', count: 10 },
             ...[...Array(17)].map((_, idx) => ({ date: `2016/02/${idx + 10}`, count: idx, content: '' })),
-            { date: '2016/04/11', count: 2 },
-            { date: '2016/05/01', count: 5 },
-            { date: '2016/05/02', count: 5 },
-            { date: '2016/05/04', count: 11 },
+            { date: '2022/02/11', count: 40 },
+            { date: '2022/02/01', count: 50 },
+            { date: '2022/02/02', count: 60 },
+            { date: '2022/02/04', count: 0 },
           ]
         return (
             <div>
@@ -108,8 +108,27 @@ export class App extends Component {
                                 Record your daily emotion !!
                     </p>
                         </div>
-                        <div className="col-lg-8">
-                            <HeatMap value={value} startDate={new Date('2016/01/01')} />
+                        <div className="col-8 ht-60 pr-0 mr-0">
+                        <HeatMap
+                            value={value}
+                            width={600}
+                            style={{ color: '#AD001D' }}
+                            startDate={new Date('2022/01/01')}
+                            panelColors={{
+                                10: '#87CEEB',
+                                20: '#FFD700',
+                                30: '#F08080',
+                                40: '#FF69B4',
+                                50: '#00FF7F,',
+                                60: '#7B68EE',
+                            }}
+                        />
+                            <h5 style={{ color: '#87CEEB', display: 'inline' }}>sad</h5>
+                            <h5 style={{color:'#FFD700', display: 'inline' }}> joy </h5>
+                            <h5 style={{color:'#F08080', display: 'inline'}}> anger </h5>
+                            <h5 style={{color:'#FF69B4', display: 'inline'}}> love </h5>
+                            <h5 style={{color:'#00FF7F', display: 'inline'}}> surprise </h5>
+                            <h5 style={{color:'#7B68EE', display: 'inline'}}>  fear  </h5>
                         </div>
                     </div>
 

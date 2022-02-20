@@ -44,17 +44,17 @@ function ShowPost(props) {
                 </div>
             </div>
             : null}
-        <div className="col-md-6 col-sm-6 col-xs-12 showblog mb-3">
-            <div className="showblog_card card">
+        <div className="col-4 showblog mb-3">
+            <div className="showblog_card card ht-30 px-2" style={{height: '400px', width: '350px'}}>
                 <div className="showblog_card_image"
-                    style={{ backgroundImage: `url(${props.imagePath})` }}>
+                    style={{ backgroundImage: `url(${props.imagePath})`}}>
 
 
                     <div className="show_auth_img">
                         <Link to={"/public/" + post.user?.username} style={{ backgroundImage: `url(${post.user?.imagePath ? post.user.imagePath : avtar})` }}>By Mehul</Link>
                     </div>
                 </div>
-                <div className="card-body">
+                <div className="card-body ht-20">
                     <h5 className="card-title pt-3">
                         {pathname === "/mypost" ?
                             <Link

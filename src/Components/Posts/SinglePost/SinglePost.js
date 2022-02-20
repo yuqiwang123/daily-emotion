@@ -10,6 +10,12 @@ import Modal from '../../../Containers/Modal/Modal'
 import ReactAudioPlayer from 'react-audio-player';
 import Icon from "react-crud-icons";
 import "../../../../node_modules/react-crud-icons/dist/css/react-crud-icons.css";
+import joy from './songs/joy.mp3'
+import anger from './songs/anger.mp3'
+import fear from './songs/fear.mp3'
+import love from './songs/love.mp3'
+import sadness from './songs/sadness.mp3'
+import surprise from './songs/surprise.mp3'
 
 export class SinglePost extends Component {
     constructor(props) {
@@ -118,12 +124,12 @@ export class SinglePost extends Component {
                 <div className='card pt-5 pl-5 mt-5 ml-9'>
                     <div>
                         <ReactAudioPlayer
-                            src={`public/songs/${post1.emotion}.mp3`}
+                            src={post1.emotion}
                             autoPlay
                             controls
                         />
                     </div>
-                    <div>
+                <div>
                         <div className='pt-5'>{moment(post1.postDate).format("MMM DD, YYYY")}</div>
                         {this.props.match.path === "/mypost/:id" &&
                             <div className="col-3 d-block col-xs-12" id="edit">
