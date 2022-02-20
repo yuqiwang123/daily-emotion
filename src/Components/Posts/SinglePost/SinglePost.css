@@ -1,0 +1,99 @@
+.SingleBlog_avatar{
+    width: 50%;
+    float: none;
+    margin-top: 25px;
+    
+}
+
+.SingleBlog .main{
+    margin:0 auto
+}
+.SingleBlog{
+    margin:0 auto
+    /* margin: 0 auto;
+    float: none;
+    width: 750px!important; */
+}
+
+.SingleBlog_avatar a{
+    float: left;
+    width: auto;
+
+}
+.SingleBlog_avatar a:nth-child(2) {
+    float: none;
+}
+.SingleBlog_avatar img {
+    border-radius: 50%;
+}
+.SingleBlog_avatar p {
+    float: none;
+    display: block;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+.modal.display-block {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    
+    top: 15%;
+}
+
+section.modal-main {
+    
+    width: 70%;
+    background: #999;
+    margin: 0 auto;
+    /* top: 25%; */
+}
+.modal-header:before{    display: table;
+    content: " ";
+}
+#backgroundpicture {
+    background-size: 700px 800px;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+.row {
+    height: 900px;
+}
+.emotiontag {
+    position: absolute;
+    top: 240px;
+    left: 260px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+#post {
+    text-align: center;
+    width: 50px;
+    border-bottom:4px solid #000;
+}
+#edit {
+    width: 200px;
+    position:relative;
+    left: 400px;
+    top: -130px;
+}
+.card {
+    height: 660px;
+}
+h4 {
+    position: relative;
+    top: -120px;
+}
+.text {
+    position: relative;
+    top: -60px;
+}
+#deletebtn {
+    margin: 0;
+    background-color: white;
+}
+#edit button {
+    position: relative;
+    left: 80px;
+    top: -60px;
+}
+
