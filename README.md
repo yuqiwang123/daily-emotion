@@ -1,5 +1,5 @@
 # daily-emotion
-> Daily Emotion is a AI model based full-stack website, which contains three main parts: AI model, database, and UI design.
+> Daily Emotion is an AI model based full-stack website, which contains three main parts: AI model, database, and UI design.
 
 The website was built based on React, node.js and MongoDB, and it is implemented by programming languages including JavaScript, JSX, HTML, and CSS, etc.
 The website can identify user’s daily emotion through their daily posted text using an AI model, 
